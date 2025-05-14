@@ -9,7 +9,7 @@ def setup_admin(app):
 
     admin = Admin(app, name='Instagram Clone Admin', template_mode='bootstrap3')
 
-    # Registrar modelos en el panel de administración
+    
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(Post, db.session))
     admin.add_view(ModelView(Comment, db.session))
